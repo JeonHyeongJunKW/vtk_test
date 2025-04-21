@@ -25,6 +25,8 @@ add_executable(
 
 target_link_libraries(test_1 PRIVATE ${VTK_LIBRARIES})
 
-vtk_module_autoinit(
-  TARGETS test_1
-  MODULES ${VTK_LIBRARIES})
+add_executable(
+  test_2
+  src/test_2/main.cpp)
+
+target_link_libraries(test_2 PRIVATE ${VTK_LIBRARIES})
